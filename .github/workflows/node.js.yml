@@ -12,6 +12,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install
+        run: yarn i -g
       - name: Deploy to DigitalOcean Droplet
         uses: appleboy/ssh-action@v0.1.2
         with:
