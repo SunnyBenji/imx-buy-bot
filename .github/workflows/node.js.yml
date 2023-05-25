@@ -25,4 +25,4 @@ jobs:
             pm2 start "yarn -s buy-eth >> /home/benjamin/logs/buy-eth.log"
             pm2 start "yarn -s buy-imx >> /home/benjamin/logs/buy-imx.log
             pm2 start "yarn -s buy-usdc >> /home/benjamin/logs/buy-usdc.log
-            echo "Deploy ok"
+            echo "Deploy ok."
