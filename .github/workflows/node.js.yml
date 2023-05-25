@@ -20,6 +20,10 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           script: |
             cd /var/www/imx-buy-bot
+            git pull git@github.com:SunnyBenji/imx-buy-bot.git
+            pm2 stop "buy-eth"
+            pm2 stop "buy-imx"
+            pm2 stop "buy-usdc"
             pm2 start "yarn -s buy-eth >> ~/logs/buy-eth.log"
             pm2 start "yarn -s buy-imx >> ~/logs/buy-imx.log
             pm2 start "yarn -s buy-usdc >> ~/logs/buy-usdc.log
