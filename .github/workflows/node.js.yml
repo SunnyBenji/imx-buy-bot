@@ -23,6 +23,6 @@ jobs:
             git pull git@github.com:SunnyBenji/imx-buy-bot.git
             pm2 delete all
             pm2 start "yarn -s buy-eth >> /home/benjamin/logs/buy-eth.log"
-            pm2 start "yarn -s buy-imx >> /home/benjamin/logs/buy-imx.log
-            pm2 start "yarn -s buy-usdc >> /home/benjamin/logs/buy-usdc.log
+            pm2 start "yarn -s buy-imx >> /home/benjamin/logs/buy-imx.log"
+            pm2 start "yarn -s buy-usdc >> /home/benjamin/logs/buy-usdc.log"
             echo "Deploy ok."
